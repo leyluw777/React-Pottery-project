@@ -1,0 +1,91 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact {
+        .left-contact  {
+            form {
+                width: 100% !important;
+            }
+        }
+    }
+
+      .contact-part {
+       .contact-i {
+           .message-i {
+               font-size: 140px !important;
+           }
+       }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .blog-box {
+        .bg-img {
+            max-width: 100% ;
+ 
+        }
+        .box-info {
+            position: inherit ;
+            bottom: 0 ;
+            width: 100% ;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+   .blog-box {
+       .bg-img {
+           max-width: 100% ;
+
+       }
+       .box-info {
+           position: inherit ;
+           bottom: 0 ;
+           width: 100% ;
+       }
+   }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .blog-box {
+        .bg-img {
+            max-width: 80% ;
+ 
+        }
+        .box-info {
+            position: absolute ;
+            bottom: 0% ;
+            left: 15%;
+            width:  70% ;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .contact {
+        .left-contact {
+            form{
+                width: 85% !important;
+            }
+        }
+    }
+
+    .deliveryPage {
+        .marq-txt {
+            font-size: 45px !important;
+        }
+    }
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

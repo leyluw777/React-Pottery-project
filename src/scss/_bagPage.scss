@@ -1,0 +1,189 @@
+.bag-header {
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/bagBg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .bag-nav {
+        background: transparent;
+        border: none;
+        ul {
+            li {
+                a{
+                    &:hover {
+                        color:#edb88c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bag-section {
+   .bag-head {
+       span {
+           margin-left: 20px;
+          font-weight: 300;
+
+       }
+   }
+ 
+  .table {
+    max-width: 100% !important;
+     .bag-item {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         background-color:rgba(0, 0, 0, 0.03) ;
+         margin: 20px 0;
+         border-radius: 20px;
+         .item-title {
+             width: 150px;
+         }
+         td {
+             background-color: transparent;
+             border: none;
+             &:hover {
+                 background-color: transparent;
+             }
+         }
+         .update-item {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             .add-btn, .dlt-btn {
+                 background-color: #edb88c;
+                 border-radius: 50px;
+                 margin: 5px 0;
+                 
+                 width: 30px;
+                 height: 30px;
+                 border: none;
+                 transition: 0.5s;
+                &:hover {
+                    background-color: #e0a06c;
+                }
+             }
+         }
+
+         .remove-btn {
+             width: 30px;
+             height: 30px;
+             border: none;
+             transition: 0.5s;
+             border-radius: 30px;
+             background-color: transparent;
+         }
+     }
+  }
+
+  .bag-order {
+      display: flex;
+      justify-content: center;
+
+    .order-sum {
+        width: 90%;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 10px;
+        padding: 30px;
+        p {
+            &:first-child {
+                text-align: center;
+                a {
+                    color: rgb(46,46,46);
+                }
+            }
+        }
+        h4 {
+            font-style: italic !important;
+        }
+       .order-price{
+            background:white ;
+            border-radius: 20px;
+            padding: 20px;
+           width: 100%;
+           height: 20vh;
+           p {
+               text-align: left;
+               margin: 0;
+               
+               &:first-child {
+                   margin: 0px 0 5px 0;
+               }
+               display: flex;
+               justify-content: space-between;
+           }
+           .total-p {
+               border-top: 1px solid rgba(0, 0, 0, 0.15);
+               margin: 10px 0;
+               padding: 15px 0;
+           }
+         
+       }
+    }
+    .order-btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .buy-btn {
+        margin: 20px 0;
+        background-color: #edb88c;
+        border-radius: 30px;
+        padding: 7px 20px;
+        border: none;
+        transition: 0.5s;
+        &:hover {
+            background-color: #e0a06c;
+        }
+    }
+    .clear-btn {
+        background-color: white;
+        margin: auto 0;
+        padding: 10px 20px;
+        border: none;
+        transition: 0.5s;
+        &:hover {
+            color: #edb88c;
+        }
+    }
+  }
+
+  .bag-order-sm {
+      width: 100%;
+      background-color: rgb(238, 238, 238); 
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      .order-price-sm {
+          width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          p{
+              margin: 0;
+              &:first-child {
+                  font-weight: 500;
+              }
+          }
+      }
+      .buy-btn {
+        width: 50%;
+        background-color: #edb88c;
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: none;
+        transition: 0.5s;
+        &:hover {
+            background-color: #e0a06c;
+        }
+      }
+  }
+}

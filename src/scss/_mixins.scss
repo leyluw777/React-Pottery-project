@@ -1,0 +1,98 @@
+@mixin link-style {
+    color: #eeeeee;
+    text-decoration: none;
+    transition: .3s;
+
+
+    &:hover {
+        color: #edb88c;
+
+    }
+}
+
+@mixin btn-more {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(46, 46, 46);
+    &::after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        right: -20px;
+        transition: 0.5s;
+        font-size: 18px;
+    }
+
+    &:hover {
+        padding-right: 24px;
+
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            right: 10px;
+        }
+    }
+}
+
+@mixin btn-effect {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    color: rgb(46, 46, 46);
+    &::after {
+        content: "";
+        background: #e0a06c;
+        position: absolute;
+        
+        z-index: -5;
+        padding: 0.85em 0.75em;
+        display: block;
+        border-radius: 50%;
+        left: -50%;
+        right: -50%;
+        top: -150%;
+        bottom: -150%;
+        line-height: 8.34em;
+        transform: scale(0, 0);
+        transition: all .5s linear;
+    }
+
+    
+
+
+    &:hover {
+        color: rgb(29, 29, 29);
+        transform: translateY(-5px);
+        &::after {
+            transform: scale(1, 1);
+        }
+
+    }
+}
+
+
+@mixin cardHover {
+ 
+        cursor: pointer;
+    box-shadow: 0px 5px 27px 0px rgba(255, 112, 0, 0.25) !important;
+    transform: scale(1.05);
+
+    
+}
+
+@mixin cardImg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transform: scale(1) ;
+    background-position: center;
+    background-size: cover;
+}
