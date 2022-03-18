@@ -188,7 +188,7 @@ export class ContactPage extends Component  {
               <nav className="d-none d-md-flex d-lg-flex d-xl-flex">
                 <ul>
                   <li>
-                    <Link to="/"> Home</Link>
+                    <Link to="/React-Pottery-project"> Home</Link>
                   </li>
                   <li>
                     <Link to="/about"> About </Link>
@@ -229,7 +229,7 @@ export class ContactPage extends Component  {
 
             <div className="row">
               <div className="col-12">
-                <Link to="/" className="delivery-links">
+                <Link to="/React-Pottery-project" className="delivery-links">
                   {" "}
                   Home
                 </Link>

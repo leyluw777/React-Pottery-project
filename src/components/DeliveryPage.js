@@ -214,7 +214,7 @@ const DeliveryPage = () => {
                                 </div>
                               
                             <ul>
-                                <li><Link to="/"> Home</Link></li>
+                                <li><Link to="/React-Pottery-project"> Home</Link></li>
                                 <li> <Link to="/about"> About </Link> </li>
                                 <li onClick={() => setToggle(toggle => ! toggle) } className="drop-menu" id="drop-down"><span >Shop
                                 <FontAwesomeIcon icon={faCaretDown} />
@@ -238,7 +238,7 @@ const DeliveryPage = () => {
                         </div>
                         <nav className = "d-none d-md-flex d-lg-flex d-xl-flex"> 
                             <ul>
-                                <li><Link to="/"> Home</Link></li>
+                                <li><Link to="/React-Pottery-project"> Home</Link></li>
                                 <li><Link to="/about"> About </Link></li>
                                 <li className="drop-menu"><Link to="/shop" href="" >Shop</Link>
                                 <ul>
@@ -266,7 +266,7 @@ const DeliveryPage = () => {
                 <div className="row">
                     
                     <div className="col-12"> 
-                    <Link to="/" className = "delivery-links"> Home</Link>
+                    <Link to="/React-Pottery-project" className = "delivery-links"> Home</Link>
                     <span>/</span>
                     <Link to="/delivery" className = "delivery-links"> Delivery</Link>
                     </div>

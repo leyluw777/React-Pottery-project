@@ -208,7 +208,7 @@ function BlogPage() {
                         </motion.div>
                         <nav className = "d-none d-md-flex d-lg-flex d-xl-flex"> 
                             <ul>
-                                <li><Link to="/"> Home</Link></li>
+                                <li><Link to="/React-Pottery-project"> Home</Link></li>
                                 <li><Link to="/about"> About </Link></li>
                                 <li className="drop-menu"><Link to="/shop" href="" >Shop</Link>
                                 <ul>
@@ -237,7 +237,7 @@ function BlogPage() {
 
                 <div className="row flex-row align-items-center justify-content-between ">
               <div className="links-content col-12">
-                <Link to="/" className="aboutLink">
+                <Link to="/React-Pottery-project" className="aboutLink">
                   
                   Home
                 </Link>

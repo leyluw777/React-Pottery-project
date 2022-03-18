@@ -23,7 +23,7 @@ function App() {
           
          
           
-          <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/React-Pottery-project" component={HomePage}></Route>
           <Route path="/about" component={AboutPage}></Route>
           <Route path="/delivery" component={DeliveryPage}></Route>
           <Route path="/contact" component={ContactPage}></Route>

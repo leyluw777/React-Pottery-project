@@ -171,7 +171,7 @@ function ShopPage() {
 
                     <ul>
                       <li>
-                        <Link to="/"> Home </Link>
+                        <Link to="/React-Pottery-project"> Home </Link>
                       </li>
                       <li>
                         {" "}
@@ -237,7 +237,7 @@ function ShopPage() {
 
             <div className="row flex-row align-items-center justify-content-between">
               <div className="links-content col-12">
-                <Link to="/" className="aboutLink">
+                <Link to="/React-Pottery-project" className="aboutLink">
                   
                   Home
                 </Link>
