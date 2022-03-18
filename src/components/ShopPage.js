@@ -45,22 +45,22 @@ const headerVariants = {
   }
   
 
-const headVariants = {
-    initial: {
-      y:"-50vh",
-      opacity:0
-    },
-    visible: {
-      opacity:1,
-      y: "0vh",
-      transition: {
-        delay:2.2,
-        duration:2,
-        type:"spring",
-        stiffness: "200"
-      }
-    }
-}
+// const headVariants = {
+//     initial: {
+//       y:"-50vh",
+//       opacity:0
+//     },
+//     visible: {
+//       opacity:1,
+//       y: "0vh",
+//       transition: {
+//         delay:2.2,
+//         duration:2,
+//         type:"spring",
+  
+//       }
+//     }
+// }
 
 const pageVariants = {
     initial: {
@@ -228,11 +228,11 @@ function ShopPage() {
             </div>
 
             <div className="row align-items-center justify-content-center flex-column head-txt">
-              <motion.h2
-                variants={headVariants}
-                initial="initial"
-                animate="visible"
-              > Shop  </motion.h2>
+              <h2
+                // variants={headVariants}
+                // initial="initial"
+                // animate="visible"
+              > Shop  </h2>
             </div>
 
             <div className="row flex-row align-items-center justify-content-between">
