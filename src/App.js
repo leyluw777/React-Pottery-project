@@ -10,8 +10,6 @@ import {CartProvider} from 'react-use-cart'
 import { AnimatePresence } from "framer-motion";
 import { Route, Switch, useLocation } from "react-router-dom";
 
-
-
 function App() {
   const location = useLocation();
 
@@ -20,9 +18,6 @@ function App() {
       <AnimatePresence>
      
         <Switch location={location} key={location.key}>
-          
-         
-          
           <Route exact path="/React-Pottery-project" component={HomePage}></Route>
           <Route path="/about" component={AboutPage}></Route>
           <Route path="/delivery" component={DeliveryPage}></Route>

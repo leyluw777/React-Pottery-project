@@ -18,7 +18,9 @@ function CartItems() {
                         desc={item.desc}
                         price={item.price}
                         item={item}
-                        key={index} />
+                        key={index}
+                        color = {item.color}
+                        />
                     ) 
                 })}
 

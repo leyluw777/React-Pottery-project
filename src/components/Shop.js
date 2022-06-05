@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const Piece = (props) => {
     return(
-        <div className="piece col-9 col-md-5 col-lg-2 col-xl-2 mb-5">
+        <div className="piece col-5 col-md-5 col-lg-2 col-xl-2 mb-5">
             <img src={props.image} alt="" />
             <h4>{props.name}</h4>
         </div>

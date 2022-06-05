@@ -17,6 +17,7 @@ import data from './Data';
 import CartItems from './CartItems'
 import Footer from './Footer'
 import {useCart} from 'react-use-cart';
+import Data from "./Data"
 
 
 const headerVariants = {
@@ -103,13 +104,40 @@ const pageVariants = {
     }
   }
 
+// const setItem = (blue ) => {
+//   const newItem = Data.filter((newVal) => {
+//     return newVal.color === curcat; 
+//         // comparing category for displaying data
+//   });
+//   setItem(newItem);
+// }
 
+// const setItem = (Data) => {
+//     switch (Data.color) {
+//       case 'white':
+//         return 
+//     }
+// }
 
-function ShopPage() {
+function ShopPage( {setItem, menuItems}) {
     const [show, setShow] = useState(false);
     const [toggle, setToggle] = useState(false);
     const{totalItems} = useCart();
+    // const whiteElements = Data.productData.filter( item => {
+    //   if (item.color == "white")
+    //     return item;
+    // })
+  React.state = {
+      isWhite: false
+    }
 
+    const whiteCards = (item) => {
+      React.state.isWhite = true;
+      data.productData.filter(item => item.color === "white" )
+      .map(item => <div> <CartItem key = {item.id} /> </div>)
+          
+    }
+  
     return (
         <motion.div
         variants = {pageVariants} 
@@ -261,7 +289,7 @@ function ShopPage() {
            <h4>Filter</h4>
            <p className="p-head">Colors </p>
 
-           <p>
+           <p onClick = {whiteCards} >
              <span><div className="color-idenf-1"></div>  White</span>
              <span>(14)</span>
            </p>
@@ -299,6 +327,7 @@ function ShopPage() {
               <hr />
               <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable that it has a more-or-less normal distribution of letters.</p>
             </div>
+            
             <CartItems />
             </div>
 
@@ -312,5 +341,7 @@ function ShopPage() {
         </motion.div>
     )
 }
+
+
 
 export default ShopPage

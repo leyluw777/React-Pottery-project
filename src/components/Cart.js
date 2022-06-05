@@ -12,6 +12,8 @@ import Logo from '../img/logo.png'
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import { motion } from "framer-motion";
 
+
+
 const navBar = {
     open: {
       opacity: 1,
@@ -78,7 +80,96 @@ const Cart = () => {
         removeItem,
         emptyCart,} = useCart();
     
-if(isEmpty) return <h1>Your cart is empty</h1>
+if(isEmpty) return <div >
+    <header className="bag-header">
+                <div className="container-fluid">
+                    <div className="row align-items-center ">
+                        <div className="head-logo col-12 col-md-2 col-lg-3 col-xl-3 d-flex justify-content-center justify-content-md-start justify-content-lg-start justify-content-xl-start">
+                            <a href="">
+                            <img src={Logo} alt="" />
+                            </a>
+                        </div>
+      
+
+                        <div className="menu-bar col-6 d-flex d-md-none d-lg-none d-xl-none">
+                            <span href="" id="toggle-open" onClick={() => setShow(show => ! show) }>
+                            <FontAwesomeIcon icon={faBars}  />
+                            </span>
+                            <motion.div
+                             animate= {show ? "open" :"closed"}
+                             variants={navBar}
+                             transition={{duration: 0.5}}
+                            id="toggle-menu" className="toggle-menu">
+                                <div className="toggle-content">
+                                <div className="toggle-head">
+                                    <h5>Menu</h5>
+                                    <span id="toggle-close" onClick={() => setShow(show => ! show) }>
+                                    <FontAwesomeIcon icon={faTimes} />
+                                    </span>
+                                </div>
+                              
+                            <ul>
+                                <li><Link to="/"> Home</Link></li>
+                                <li> <Link to="/about"> About </Link> </li>
+                                <li onClick={() => setToggle(toggle => ! toggle) } className="drop-menu" id="drop-down"><span >Shop
+                                <FontAwesomeIcon icon={faCaretDown} />
+                                 </span>
+                                <motion.ul
+                                animate= {toggle ? "open" :"closed"}
+                                variants={toggleBar}
+                                transition={{duration: 0.5}}
+                                id="drop-menu">
+                                    <li><Link to="/shop"> All products </Link></li>
+                                    <li><Link to="/shop"> Exclusive pieces</Link></li>
+                                </motion.ul>
+                                </li>
+                               
+                                <li><Link to="/delivery" > Delivery </Link></li>
+                                <li><Link to="/blog"> Blog</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                            </div>
+                            </motion.div>
+                        </div>
+                        <nav className = "d-none d-md-flex d-lg-flex d-xl-flex col-5 col-md-7 col-lg-7 xol-xl-7 bag-nav"> 
+                            <ul>
+                                <li><Link to="/"> Home</Link></li>
+                                <li><Link to="/about"> About </Link></li>
+                                <li className="drop-menu"><Link to="/shop" href="" >Shop</Link>
+                                </li>
+                               
+                                <li><Link to="/delivery" > Delivery </Link></li>
+                                <li><Link to="/blog"> Blog</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                        </nav>
+
+                        <div className="menu-right col-6 d-flex d-md-none d-lg-none d-xl-none">
+                            <a href="" >
+                            <FontAwesomeIcon icon={faUser} />
+                            </a>
+                            <a href="">
+                            <FontAwesomeIcon icon={faShoppingCart} />
+                            </a>
+                        </div>
+
+                        <div className="head-icons d-none d-md-flex d-lg-flex d-xl-flex col-6 col-md-3 col-lg-2 col-xl-2 ">
+                        <a href=""><FontAwesomeIcon icon={faUser} className="head-i" /> </a>
+                        <Link to="/cards" href=""><FontAwesomeIcon icon={faShoppingCart} className="head-i shop-cart" /> <sup>{totalItems}</sup> </Link>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                </header>
+               
+               <section className='bag-section container mt-5 mb-5  d-flex justify-content-between  align-items-center'>
+                   <h3 className='col-12 col-md-6 col-lg-6 col-xl-6'> There is no item in your shopping bag</h3>
+               </section>
+                
+</div>
 
 
 

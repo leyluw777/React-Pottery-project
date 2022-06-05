@@ -9,7 +9,7 @@ const CartItem = (props) => {
     const {addItem} = useCart();
     return (
 
-        <div  className="col-11 col-md-6 col-lg-3 mx-0 mb-5 card-item ">
+        <div  className="col-5 col-md-6 col-lg-3 mx-0 mb-5 card-item ">
           
           
             <div className="card p-0 overflow-hidden h-100 shadow" >

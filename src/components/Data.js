@@ -15,7 +15,7 @@ const data = {
            title: "Old School Vans Classic",
            desc: "Default Product",
            price: 50, 
-
+           color: "green"
         },
 
         {
@@ -23,7 +23,8 @@ const data = {
             img: img2,
             title: "Voluptas assumenda",
             desc: "New Products",
-            price: 116
+            price: 116,
+            color: "brown"
          },
 
          {
@@ -31,7 +32,8 @@ const data = {
             img: img3,
             title: "Stock-on-trent",
             desc: "The best product",
-            price: 55
+            price: 55,
+            color: "black"
          },
          
          {
@@ -39,7 +41,8 @@ const data = {
             img: img4,
             title: "Cologne Ware",
             desc: "Hit Product",
-            price: 79
+            price: 79,
+            color: "blue"
          },
          
          {
@@ -47,7 +50,8 @@ const data = {
             img: img5,
             title: "Scroddled ware",
             desc: "New Product",
-            price: 85
+            price: 85,
+            color: "pink"
          },
          
          {
@@ -55,7 +59,8 @@ const data = {
             img: img6,
             title: "Queensware",
             desc: "The best Product",
-            price: 60 
+            price: 60,
+            color: "white"
          },
          
          {
@@ -63,7 +68,8 @@ const data = {
             img: img7,
             title: "Ironstone China",
             desc: "Default Product",
-            price: 139 
+            price: 139,
+            color: "brown" 
          },
            
          {
@@ -71,7 +77,8 @@ const data = {
             img: img8,
             title: "Leather-hard",
             desc: "Default Product",
-            price: 49
+            price: 49, 
+            color: "white"
          },
     ],
 };

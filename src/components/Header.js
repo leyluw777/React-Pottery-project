@@ -244,7 +244,7 @@ const  Header = () => {
               exit ="exit"
             >
                 <div className="container">
-                    <div className="row align-items-center " >
+                    <div className="row align-items-center pb-3 pb-xl-0 " >
                         <div className="head-search col-6 d-none d-md-flex d-lg-flex d-xl-flex col-md-4 col-lg-3 col-xl-3">
                             <form action="">
                                 <input type="text" placeholder="Search for product..." />

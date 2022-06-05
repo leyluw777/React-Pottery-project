@@ -247,7 +247,7 @@ export class ContactPage extends Component  {
           <div className="container">
             <div className="row mt-5 align-items-center f-column justify-content-center">
                 <div className="map-part col-12 ">
-              <Map google={this.props.google} zoom={14} className="map"
+              {/* <Map google={this.props.google} zoom={14} className="map"
                initialCenter={{
                 lat: 40.3777,
                 lng: 49.8920
@@ -261,7 +261,11 @@ export class ContactPage extends Component  {
                 <InfoWindow onClose={this.onInfoWindowClose}>
                   
                 </InfoWindow>
-              </Map>
+              </Map> */}
+              <iframe className="col-12" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4212621318766!2d49.90043611489476!3d40.4216699632638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063beb9b4133f%3A0x9ac597ab5bb8fc64!2sAz%C9%99rbaycan%20Metrologiya%20%C4%B0nstitutu!5e0!3m2!1sru!2s!4v1611043659849!5m2!1sru!2s"
+												
+												></iframe>
               </div>
 
               <Fade top>
