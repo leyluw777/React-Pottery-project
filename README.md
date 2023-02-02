@@ -20,7 +20,7 @@ All pages has their own features, that will be mentioned below.
 
 ## Technologies 
 What I used in project:
-* React. For react there were used libraries and packages such as:
+* React. All sections and pages were written by components. For react there were used libraries and packages such as:
   - React router - for switching the pages without loading.
   - React-cards - for ready structure of cards.
   - React-google-maps - for showing the location of shop on the page Contact (which could not work right now because of expiration date)
